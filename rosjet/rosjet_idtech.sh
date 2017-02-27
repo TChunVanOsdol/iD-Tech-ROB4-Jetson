@@ -44,6 +44,7 @@ sudo apt-get -y install ros-kinetic-usb-cam
 sudo apt-get -y install ros-kinetic-ros-control
 sudo apt-get -y install ros-kinetic-dynamic-reconfigure
 sudo apt-get -y install ros-kinetic-fake-localization
+sudo apt-get -y install ros-kinetic-image-view
 
 #Install other files that may be nessessary
 sudo apt-get install -y build-essential cmake git pkg-config
