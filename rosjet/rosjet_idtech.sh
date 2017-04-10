@@ -71,7 +71,7 @@ wstool update -t src
 #Install Caffe (https://gist.github.com/jetsonhacks/acf63b993b44e1fb9528)
 sudo add-apt-repository universe
 sudo apt-get update
-sudo apt-get install libprotobuf-dev protobuf-compiler gfortran \
+sudo apt-get install --yes --force-yes libprotobuf-dev protobuf-compiler gfortran \
 libboost-dev cmake libleveldb-dev libsnappy-dev \
 libboost-thread-dev libboost-system-dev \
 libatlas-base-dev libhdf5-serial-dev libgflags-dev \
