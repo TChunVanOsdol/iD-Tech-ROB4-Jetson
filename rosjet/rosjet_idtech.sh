@@ -24,39 +24,38 @@ echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 
 #Ros packages
-sudo apt-get -y install ros-kinetic-rosserial-arduino
-sudo apt-get -y install ros-kinetic-rosserial
-sudo apt-get -y install ros-kinetic-eigen-conversions
-sudo apt-get -y install ros-kinetic-tf2-geometry-msgs
-sudo apt-get -y install ros-kinetic-angles
-sudo apt-get -y install ros-kinetic-web-video-server
-sudo apt-get -y install ros-kinetic-rosbridge-suite
-sudo apt-get -y install ros-kinetic-rospy-tutorials
-sudo apt-get -y install ros-kinetic-joy
-sudo apt-get -y install ros-kinetic-teleop-twist-joy
-sudo apt-get -y install ros-kinetic-roslint
-sudo apt-get -y install ros-kinetic-controller-manager
-sudo apt-get -y install ros-kinetic-camera-calibration-parsers
-sudo apt-get -y install ros-kinetic-xacro
-sudo apt-get -y install ros-kinetic-robot-state-publisher
-sudo apt-get -y install ros-kinetic-diff-drive-controller
-sudo apt-get -y install ros-kinetic-usb-cam
-sudo apt-get -y install ros-kinetic-ros-control
-sudo apt-get -y install ros-kinetic-dynamic-reconfigure
-sudo apt-get -y install ros-kinetic-fake-localization
-sudo apt-get -y install ros-kinetic-image-view
+sudo apt-get --yes --force-yes install ros-kinetic-rosserial-arduino
+sudo apt-get --yes --force-yes install ros-kinetic-rosserial
+sudo apt-get --yes --force-yes install ros-kinetic-eigen-conversions
+sudo apt-get --yes --force-yes install ros-kinetic-tf2-geometry-msgs
+sudo apt-get --yes --force-yes install ros-kinetic-angles
+sudo apt-get --yes --force-yes install ros-kinetic-web-video-server
+sudo apt-get --yes --force-yes install ros-kinetic-rosbridge-suite
+sudo apt-get --yes --force-yes install ros-kinetic-rospy-tutorials
+sudo apt-get --yes --force-yes install ros-kinetic-joy
+sudo apt-get --yes --force-yes install ros-kinetic-teleop-twist-joy
+sudo apt-get --yes --force-yes install ros-kinetic-roslint
+sudo apt-get --yes --force-yes install ros-kinetic-controller-manager
+sudo apt-get --yes --force-yes install ros-kinetic-camera-calibration-parsers
+sudo apt-get --yes --force-yes install ros-kinetic-xacro
+sudo apt-get --yes --force-yes install ros-kinetic-robot-state-publisher
+sudo apt-get --yes --force-yes install ros-kinetic-diff-drive-controller
+sudo apt-get --yes --force-yes install ros-kinetic-usb-cam
+sudo apt-get --yes --force-yes install ros-kinetic-ros-control
+sudo apt-get --yes --force-yes install ros-kinetic-dynamic-reconfigure
+sudo apt-get --yes --force-yes install ros-kinetic-fake-localization
+sudo apt-get --yes --force-yes install ros-kinetic-image-view
 
 #Install other files that may be nessessary
-sudo apt-get install -y build-essential cmake git pkg-config
-sudo apt-get install -y libprotobuf-dev libleveldb-dev libsnappy-dev libhdf5-serial-dev protobuf-compiler
-sudo apt-get install -y libatlas-base-dev 
-sudo apt-get install -y --no-install-recommends libboost-all-dev
-sudo apt-get install -y libgflags-dev libgoogle-glog-dev liblmdb-dev
-sudo apt-get install -y python-pip
-sudo apt-get install -y python-dev
-sudo apt-get install -y python-numpy python-scipy
-sudo apt-get install -y libopencv-dev
-
+sudo apt-get install --yes --force-yes build-essential cmake git pkg-config
+sudo apt-get install --yes --force-yes libprotobuf-dev libleveldb-dev libsnappy-dev libhdf5-serial-dev protobuf-compiler
+sudo apt-get install --yes --force-yes libatlas-base-dev 
+sudo apt-get install --yes --force-yes --no-install-recommends libboost-all-dev
+sudo apt-get install --yes --force-yes libgflags-dev libgoogle-glog-dev liblmdb-dev
+sudo apt-get install --yes --force-yes python-pip
+sudo apt-get install --yes --force-yes python-dev
+sudo apt-get install --yes --force-yes python-numpy python-scipy
+sudo apt-get install --yes --force-yes libopencv-dev
 
 # Configure Catkin Workspace
 source /opt/ros/kinetic/setup.bash
