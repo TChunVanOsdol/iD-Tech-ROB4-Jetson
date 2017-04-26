@@ -16,12 +16,12 @@ generate_dynamic_reconfigure_options(
 )
 
 catkin_package(
-  INCLUDE_DIRS include
+  INCLUDE_DIRS cfg
   CATKIN_DEPENDS roscpp rospy std_msgs cv_bridge image_transport dynamic_reconfigure
 )
 
 include_directories(
-  include
+  #include
   ${catkin_INCLUDE_DIRS}
   ${dynamic_reconfigure_PACKAGE_PATH}/cmake/cfgbuild.cmake
   ${OpenCV_INCLUDE_DIRS}
