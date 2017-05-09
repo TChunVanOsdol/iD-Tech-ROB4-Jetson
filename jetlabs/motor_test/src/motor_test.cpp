@@ -11,7 +11,11 @@ class MotorTest
     MotorTest();
   private:
     ros::Publisher vel_pub;
+    ros::NodeHandle nh;
     geometry_msgs::Twist vel_msg;
+    void moveForward();
+    void moveBackward();
+    void turnRobot();
 };
 
 MotorTest::MotorTest()
