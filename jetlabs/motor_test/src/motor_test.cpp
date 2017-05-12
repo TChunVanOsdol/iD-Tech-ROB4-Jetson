@@ -23,11 +23,11 @@ MotorTest::MotorTest()
   vel_pub = nh.advertise<geometry_msgs::Twist>("/cmd_vel", 10);
 
   MotorTest::moveForward();
-  usleep(2 * 1000000); // Wait 2 seconds
+  ros::Duration(2.0).sleep(); // Wait 2 seconds
   MotorTest::turnRobot();
-  usleep(2 * 1000000); // Wait 2 seconds
+  ros::Duration(2.0).sleep(); // Wait 2 seconds
   MotorTest::moveBackward();
-  usleep(2 * 1000000); // Wait 2 seconds
+  ros::Duration(2.0).sleep(); // Wait 2 seconds
 
   ros::shutdown();
 }
